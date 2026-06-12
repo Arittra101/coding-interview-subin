@@ -1,3 +1,4 @@
+#include <stack>
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -19,7 +20,7 @@ class Solution {
 public:
     bool isPalindrome(ListNode* head) {
 
-        stack<int> st;
+        std::stack<int> st; 
         ListNode* temp = head;
         while (temp != nullptr) {
             st.push(temp->val);
